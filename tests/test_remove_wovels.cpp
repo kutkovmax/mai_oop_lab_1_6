@@ -1,6 +1,10 @@
 #include <gtest/gtest.h>
 #include "../src/remove_wovels.h"
 
+TEST(test_remove_wovels, sample) {
+    EXPECT_EQ(removeWovels("This website is for losers LOL!"), "Ths wbst s fr lsrs LL!");
+}
+
 TEST(test_remove_wovels, only_wovels) {
     EXPECT_EQ(removeWovels("aaaaa"), "");
 }
